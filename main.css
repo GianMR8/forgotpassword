@@ -1,0 +1,34 @@
+@charest "UTF-8"
+/* CSS Document */
+*{
+    box-sizing; border-box;
+}
+    .flex-container {
+        display: flex;
+        background-size: cover;
+        flex-direction: row;
+    }
+
+    body{
+        background-color: skyblue;
+        background-size: cover;
+    }
+    #container{
+        margin: 0 auto;
+        width: 767px;  
+    }
+    @media only screen and (min-width: 700px) {/* tablets and desktop */
+        #container{
+            width: 700px;
+            margin: 0 auto;
+        }
+    }
+    h1 span::before{
+            content: "tablet device";
+        }
+
+    header > h1{
+        text-align: center;
+        color:black;
+        font-size: xx-large;
+    }
